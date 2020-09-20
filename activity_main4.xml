@@ -5,75 +5,103 @@
     android:id="@+id/t8"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/k12"
     android:verticalScrollbarPosition="defaultPosition"
-    android:visibility="visible">
+    android:visibility="visible"
+    tools:visibility="visible">
 
-    <ScrollView
-        android:id="@+id/tt"
-        android:layout_width="406dp"
-        android:layout_height="348dp"
-        android:layout_marginTop="21dp"
-        android:scrollbarStyle="insideInset"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.19"
-        tools:visibility="visible">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView2"
+        android:layout_width="712dp"
+        android:layout_height="1044dp"
+        android:layout_marginTop="53dp"
+        android:scrollbarStyle="outsideOverlay"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="13dp">
 
-            <EditText
-                android:id="@+id/editTextTextMultiLine2"
-                android:layout_width="319dp"
-                android:layout_height="264dp"
-                android:layout_marginTop="48dp"
-                android:ems="10"
-                android:gravity="start|top"
-                android:hint="   Type your quotes"
-                android:inputType="textMultiLine"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:visibility="visible"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                tools:visibility="visible" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+        <Button
+            android:id="@+id/buttn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="164dp"
+            android:layout_marginLeft="164dp"
+            android:layout_marginTop="8dp"
+            android:text="Submit"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/le"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/le"
+            android:layout_width="622dp"
+            android:layout_height="421dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:fontFamily="cursive"
+            android:gravity="start|top"
+            android:hint="  Type your Quote here....."
+            android:inputType="textMultiLine"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            android:typeface="sans"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="416dp"
+            android:fontFamily="sans-serif"
+            android:text="TextView"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spin1"
+            style="@android:style/Widget.Spinner.DropDown"
+            android:layout_width="104dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@+id/button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textt"></Spinner>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="        Free_to_write"
-        android:textColor="#F8FF5100"
+        android:id="@+id/textView"
+        android:layout_width="407dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="       Free to Write"
+        android:textColor="@android:color/background_dark"
         android:textSize="36sp"
         android:textStyle="bold"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="212dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:srcCompat="@drawable/a1" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
