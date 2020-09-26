@@ -38,6 +38,21 @@ public class MainActivity extends androidx.appcompat.app.AppCompatActivity  {
         final EditText user_name = (EditText) findViewById(R.id.user_name);
 
 
+        button = (Button) findViewById(R.id.btn4);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                String str;
+                str = user_name.getText().toString();
+                Intent intent = new Intent(MainActivity.this , MainActivity3.class);
+                intent.putExtra("messageh",str);
+                startActivity(intent);
+            }
+
+
+
+        });
+
 
         button = (Button) findViewById(R.id.btn);
         button.setOnClickListener(new View.OnClickListener() {
