@@ -11,14 +11,14 @@ public class Member {
     public String getTypec() {
         return Typec;
     }
-
+    public String getName() {
+        return Name;
+    }
     public void setTypec(String typec) {
         Typec = typec;
     }
 
-    public String getName() {
-        return Name;
-    }
+
 
     public void setName(String name) {
         Name = name;
